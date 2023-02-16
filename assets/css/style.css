@@ -1,74 +1,152 @@
 *{
+    padding: 0;
     margin: 0;
-    pad: 0;
     box-sizing: border-box;
 }
+
 header{
+    background-color: #eeecec;
+    height: 8vh;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: rgb(246,236,236);
 }
 
-header .logo-div{
+.cont-logo{
+    width: 20%;
+    height: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
+    
+}
+.cont-logo>a{
+    text-decoration: none;
+    color: black;
+    width: 12rem;
+    display: flex;
     gap: .5rem;
 }
 
-header .logo{
-    width: 4rem;
+.cont-logo>a>b{
+    font-size: 2rem;
 }
 
-.busqueda-div{
-    position:relative;
-}
-.busqueda-div .barra-busqueda{
-    height:2rem; 
-    width: 30rem;
-    background-color: rgb(217, 217, 217);
-    border: none;
+.logo{
+    width: 3rem;
+    height: 3rem;
 }
 
-.busqueda-div .barra-busqueda:focus{
-    box-shadow:none;
-    border:1px solid #000;
-}
-
-.busqueda-div i{
-    position:absolute;
-    right: 8px;
-    top: 2px;
-}
-
-.busqueda-div i .lupa{
-    width: 1.5rem;
-}
-
-.carrito{
-    width: 1.5rem;
-    position: absolute;
-    top: 4px;
-    margin-left: .5rem;
-}
-
-header .enlaces{
-    width: 30rem;
+.cont-search-home{
+    width: 50%;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
 }
 
-header .enlaces a{
-    background-color: rgb(27,178,225);
-    color: #efefef;
-    padding: .2rem .5rem;
-    border-radius: 15%;
+.cont-search{
+    width: 40rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.cont-search2{
+    background-color: rgba(255, 255, 255, 0.829);
+    border-radius: 20px ;
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+}
+.search{
+    border: none;
+    background-color: transparent;
+    height: 100%;
+    width: 30rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+.img-lupa{
+    width: 1rem;
+    height: 1rem;
+}
+
+.car{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.cont-ancors{
+    width: 30rem;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+}
+.cont-ancors>a{
     text-decoration: none;
+    color: black;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: .2rem 1rem .2rem 1rem;
 }
+.mapGoogle{
+    border-radius: 20px;
+    box-shadow: 0 0 15px;
+    width: 450px;
+    height: 300px;
+    border: 0;
+}
+.negrita{
+    font-weight: bold;
+    color: rgb(169, 123, 39);
+}
+.ancorFoot{
+    border: 1px solid red;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 200px;
+}
+.contenedorFoot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contFootDad{
+    display: flex;
+    width: 40rem;
+    justify-content: center;
+    gap: 200px;
+}
+.cont-ancors>a:hover{
+    background-color: #1BB2E1;
+}
+
 main{
-    background-color: rgba(167, 232, 232, 0.246);
-    min-height: 80vh;
+    min-height: 77vh;
+    background-color: #D9D9D9;
 }
+
+.cont-carrusel{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
 .dadCarousel{
     display: flex;
     justify-content: center;
@@ -85,18 +163,137 @@ main{
     max-width: 700px;
     max-height: 465px;
 }
-#carouselExampleAutoplaying, .carousel-item{
-    border-radius: 20px;
+
+
+.cards{
+    height: auto;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
 }
+
+.producto:hover{
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
+}
+
+.tam_img_card{
+    height: 15rem !important;
+}
+
+.card-text{
+    color: #1BB2E1;
+}
+
+.stock{
+    border-radius: 20px;
+    color: white;
+    width: 5rem;
+}
+
+.img-heart{
+    width: 1.3rem;
+    height: 1.2rem;
+    
+}
+
+.favorite-btn{
+    position:absolute;
+    top: .2rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.cont-stock{
+    padding: 10px; 
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.green{
+    background-color: green;
+}
+
+.red{
+    background-color: red;
+}
+
+.style-mens{
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.style-mens>img{
+    width: 6rem;
+    margin-top: 4rem;
+}
+
+header .cont-ancors .pageActive{
+    background-color: #1BB2E1;
+}
+
+.details{
+    background-color: #1BB2E1;
+}
+
+.cont-slider{
+    height: 140px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.slide-track{
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 40s linear infinite;
+    align-items: center;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*9));
+    }
+}
+
+.cont-slide{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.cont-slide img{
+    width: 80%;
+    height: 100px;
+}
+
 .conteiner{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding-top: 2rem;
     gap: 80px;
     padding-bottom: 30px;
 
 }
+
 .imgWelcome{
     width: 300px;
     border-radius: 20px;
@@ -108,52 +305,15 @@ main{
 
 }
 
-
-/* NAv */
-header>div .navbar {
-    width: 35rem;
-}
-
-header>div .navbar .offcanvas-body {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-header>div>.navbar .offcanvas-body a {
-    text-decoration: none;
-    color: black;
-    background-color: #efefef;
-    transition: all 1s;
-    padding: .3rem .5rem;
-}
-
-header>div>.navbar .offcanvas-body a:hover {
-    background-color: #cc0026;
-    color: #efefef;
-    transition: all 1s;
-    border-radius: 15px;
-}
-
-header>div>.navbar .offcanvas-body .page {
-    background-color: #cc0026;
-    color: #efefef;
-}
-
-header .navbar button {
-    background-color: #5e4b55;
-}
-
-header .navbar button:hover {
-    background-color: #5e4b55;
-}
-
 footer{
     background-color: #000;
-    min-height: 12vh;
+    min-height: 15vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
 }
 
 .footerMod{
@@ -164,22 +324,42 @@ footer{
     width: 60px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 767px){
+.contenedor-padre{
+    background-color: white;
+    border-radius: 2rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 1rem;
+     margin: 2rem;
+ }
+ .contact-main{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     min-height: 100vh;
+     background-color: rgba(167, 232, 232, 0.246);
+ }
+ .contenedor-form{
+     width: 30rem;
+ }
+ .contact-main section h2{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .texto{
+     width: 60rem;
+     text-align: center;
+ }
+ .contact-main section{
+     margin: 3rem;
+ }
+ .nombre, .apellido, .email, .telefono, .comentario, .select{
+     padding: 5px;
+ }
+ 
+ @media only screen and (max-width: 767px){
     header>div .navbar {
         justify-content: flex-end;
     }
