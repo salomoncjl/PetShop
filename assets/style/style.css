@@ -9,6 +9,8 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 .cont-logo{
     display: flex;
@@ -332,7 +334,7 @@ footer{
 .footerMod{
     display: flex;
     gap: 60px;
-    margin: 2px;
+    margin-top: 6px;
 }
 .logoFooter{
     width: 25px;
@@ -342,7 +344,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 280px;
     padding: 1rem;
     margin: 2rem;
     height: 30rem;
@@ -351,7 +353,6 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
     background-color: rgba(167, 232, 232, 0.246);
  }
  .contenedor-form{
@@ -361,6 +362,9 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 40px; 
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
  }
 .textoContact{
     max-width: 700px;
@@ -414,8 +418,7 @@ footer{
     width: 6rem;
     
 }
-.venta{
-    
+.venta{ 
     width: 25rem;
     padding: .5rem;
     border: 1px solid black;
@@ -502,7 +505,18 @@ footer{
         display: none;
     }
     header{
-        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .dadCarousel{
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .border1{
+        border-radius: 0px;
+    }
+    .contFootDad{
+        gap: 0;
     }
     .contact-imagenes p {
         display: none;
@@ -521,7 +535,6 @@ footer{
         gap: 10px;
     }
     .parrafo{
-        font-size: 8px;
         max-width: 300px;
     }
     .imgWelcome{
@@ -530,7 +543,20 @@ footer{
     .cont-slide{
         width: 180px
     }
+    .contact-main section h2 {
+        text-align: center;
+    }
+    .container-contact {
+        width: 300px;
+    }
+    .form-control{
+        width: 300px;
+    }
+    .form-input{
+        width: 70% !important;
+        background-color: black;
+    }
+    .nombre, .apellido, .email, .telefono, .comentario {
+        padding: 0;
+    }
 }
-
-
-
