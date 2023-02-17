@@ -134,9 +134,7 @@ main{
     padding-top: 30px;
     padding-bottom: 30px;
     width: 65%;
-    min-height: 465px;
     border-radius: 20px;
-
 }
 
 #carouselExampleAutoplaying{
@@ -272,7 +270,7 @@ main{
     padding-top: 2rem;
     gap: 60px;
     padding-bottom: 30px;
-
+    margin: 10px;
 }
 
 .imgWelcome{
@@ -515,6 +513,7 @@ footer{
     }
     .mapGoogle{
         width: 300px;
+        margin: 10px;
     }
     .conteiner{
         padding-top: 1rem;
@@ -523,9 +522,13 @@ footer{
     }
     .parrafo{
         font-size: 8px;
+        max-width: 300px;
     }
     .imgWelcome{
         width: 100px;
+    }
+    .cont-slide{
+        width: 180px
     }
 }
 
