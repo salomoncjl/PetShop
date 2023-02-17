@@ -519,10 +519,13 @@ footer{
     .conteiner{
         padding-top: 1rem;
         padding-bottom: 1rem;
-        gap: 20px;
+        gap: 10px;
     }
     .parrafo{
         font-size: 8px;
+    }
+    .imgWelcome{
+        width: 100px;
     }
 }
 
