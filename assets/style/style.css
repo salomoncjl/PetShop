@@ -10,28 +10,19 @@ header{
     display: flex;
 }
 .cont-logo{
-    width: 20%;
-    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    align-content: center;
 }
-.cont-logo>a{
-    text-decoration: none;
+header div a{
+    text-decoration: none
+}
+header div a b{
+    font-size: 30px;
     color: black;
-    width: 12rem;
-    display: flex;
-    gap: .5rem;
 }
-
-.cont-logo>a>b{
-    font-size: 2rem;
-}
-
 .logo{
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .cont-search-home{
@@ -41,6 +32,10 @@ header{
     justify-content: center;
     align-items: center;
     gap: 1rem;
+}
+.cont-search-home-fake{
+    width: 50%;
+    height: 100%;
 }
 
 .cont-search{
@@ -85,7 +80,7 @@ input:focus {
 }
 
 .cont-ancors{
-    width: 30rem;
+    width: 40px;
     height: 100%;
     display: flex;
     justify-content: end;
@@ -211,10 +206,6 @@ main{
 .style-mens>img{
     width: 6rem;
     margin-top: 4rem;
-}
-
-header .cont-ancors .pageActive{
-    background-color: #1BB2E1;
 }
 
 .details{
@@ -464,7 +455,7 @@ footer{
     gap: 1rem;
 }
 
- @media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px){
     header>div .navbar {
         justify-content: flex-end;
     }
@@ -502,3 +493,6 @@ footer{
     }
 
 }
+
+
+
