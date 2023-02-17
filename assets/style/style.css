@@ -6,15 +6,23 @@
 
 header{
     background-color: #eeecec;
-    height: 8vh;
     display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 .cont-logo{
     display: flex;
     align-content: center;
 }
 header div a{
-    text-decoration: none
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.ancorActive{
+    border-bottom: 4px solid orange;
+    border-radius: 2px;
+    padding: 8px;
 }
 header div a b{
     font-size: 30px;
@@ -24,18 +32,23 @@ header div a b{
     width: 4rem;
     height: 4rem;
 }
-
+.ancorHeader{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
 .cont-search-home{
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
 }
 .cont-search-home-fake{
-    width: 50%;
-    height: 100%;
+    display: flex;
+    width: 200px;
 }
 
 .cont-search{
@@ -75,8 +88,9 @@ input:focus {
 }
 
 .car{
+    display: flex;
     width: 1.5rem;
-    height: 1.5rem;
+    margin-right: 10px;
 }
 
 .cont-ancors{
@@ -256,7 +270,7 @@ main{
     align-items: center;
     justify-content: center;
     padding-top: 2rem;
-    gap: 80px;
+    gap: 60px;
     padding-bottom: 30px;
 
 }
@@ -268,8 +282,9 @@ main{
 }
 .parrafo{
     display: flex;
-    width: 600px;
+    max-width: 600px;
     text-align: center;
+    padding: 2rem;
 }
 
 .mapGoogle{
@@ -488,10 +503,27 @@ footer{
     .img-contacto{
         display: none;
     }
+    header{
+        flex-wrap: wrap;
+    }
     .contact-imagenes p {
         display: none;
     }
-
+    .ancorHeader{
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .mapGoogle{
+        width: 300px;
+    }
+    .conteiner{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        gap: 20px;
+    }
+    .parrafo{
+        font-size: 8px;
+    }
 }
 
 
