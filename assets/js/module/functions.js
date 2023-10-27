@@ -110,7 +110,7 @@ export function writeSponsorsHome(list, container) {
   for (let i = 0; i < 18; i++) {
     container.innerHTML += `
       <div class="cont-slide">
-        <img src="./Assets/img/${list[i]}" alt="">
+        <img src="./assets/img/${list[i]}" alt="">
       </div>
     `
   }
@@ -141,16 +141,16 @@ export function createCarruHome(list, container) {
   container.innerHTML += `
     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="./Assets/img/${list[0]}" class="d-block w-100 m-0 border1" alt="${list[0]}">
+                        <img src="./assets/img/${list[0]}" class="d-block w-100 m-0 border1" alt="${list[0]}">
                       </div>
                       <div class="carousel-item">
-                        <img src="./Assets/img/${list[1]}" class="d-block w-100 m-0 border1" alt="${list[1]}">
+                        <img src="./assets/img/${list[1]}" class="d-block w-100 m-0 border1" alt="${list[1]}">
                       </div>
                       <div class="carousel-item">
-                        <img src="./Assets/img/${list[2]}" class="d-block w-100 m-0 border1" alt="${list[2]}">
+                        <img src="./assets/img/${list[2]}" class="d-block w-100 m-0 border1" alt="${list[2]}">
                       </div>
                       <div class="carousel-item">
-                        <img src="./Assets/img/${list[3]}" class="d-block w-100 m-0 border1" alt="${list[3]}">
+                        <img src="./assets/img/${list[3]}" class="d-block w-100 m-0 border1" alt="${list[3]}">
                       </div>
                     </div>
   `
@@ -169,7 +169,7 @@ export function noEncontrado(container, formulario) {
               <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
               </svg> */
 export function createShopping(list,container,precioTotal=0,bool){
-  let src = bool ? "../img/garbage.png" : "./Assets/img/garbage.png"
+  let src = bool ? "../img/garbage.png" : "./assets/img/garbage.png"
   let template = ""
   list.forEach( (element,i) => {
     template +=`
